@@ -120,7 +120,7 @@
         }
         50% {
           filter: drop-shadow(0 0 40px rgba(212, 175, 55, 1));
-          transform: scale(1.02); /* Çok hafif büyüme efekti */
+          transform: scale(1.02);
         }
         100% {
           filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.8));
@@ -140,8 +140,6 @@
       .prophet-image-glow {
         max-width: 600px;
         height: auto;
-        /* Eğer resim siyahsa beyaz yapmak için invert(1) ekle, 
-           eğer zaten beyaz/renkli ise invert(1)'i kaldırabilirsin */
         filter: invert(1);
         animation: nur-pariltisi 5s infinite ease-in-out;
         z-index: 10;
@@ -164,9 +162,15 @@
       </div>
       <div class="waiting-videos">
         <strong>Bekleme Videoları:</strong>
-        <button onclick="window.open('URL_BEKLEME_1')">Video 1</button>
-        <button onclick="window.open('URL_BEKLEME_2')">Video 2</button>
-        <button onclick="window.open('URL_BEKLEME_3')">Video 3</button>
+        <button onclick="window.open('https://youtu.be/ceGQMW9pTVg')">
+          Video 1
+        </button>
+        <button onclick="window.open('https://youtu.be/w4D4ckzpcoI')">
+          Video 2
+        </button>
+        <button onclick="window.open('https://youtu.be/XraIxBpKkpM')">
+          Video 3
+        </button>
       </div>
     </nav>
 
@@ -187,20 +191,43 @@
     </section>
 
     <section id="akıs">
-      <span class="program-step">Şiir Gösterisi</span>
-      <h2>Medine'nin Gülü</h2>
+      <span class="program-step">Açılış</span>
+      <h2>Kur'an-ı Kerim Tilaveti</h2>
       <div class="media-container">
-        <p>St. Gallen Erkekler</p>
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID"></iframe>
+        <p>Yasin Suresi (İlk Sayfa)</p>
         <div class="quote">
-          "O'nun (sas) yolu, her adımda bir nura açılır." — Sonsuz Nur
+          "Kur'an, şu kâinat kitabının bir tercüme-i ezeliyesi ve âyât-ı
+          tekviniyesini okuyan mütenevvi dillerinin tercümanıdır." — Risale-i
+          Nur (Sözler)
         </div>
       </div>
     </section>
 
-    <section class="award-section">
-      <span class="program-step">Tören</span>
-      <h2>1. Kategori Finalistlerinin Ödül Töreni</h2>
+    <section>
+      <span class="program-step">Şiir Gösterisi</span>
+      <h2>Medine'nin Gülü</h2>
+      <div class="media-container">
+        <p>St. Gallen Erkekler</p>
+
+        <iframe
+          width="1038"
+          height="584"
+          src="https://www.youtube.com/embed/UZ9uyQI3pF0"
+          title="Relaxing Nature Ambience Meditation🌼GOOD MORNING SPRING NATURE THERAPY🌷Flowery MEADOW Healing Sounds"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
     </section>
 
     <section>
@@ -209,14 +236,9 @@
       <div class="media-container">
         <p>Grup İlahi</p>
         <div class="quote">
-          "Küçük kalplerin büyük duaları Arş'a yükselir." — Risale-i Nur
-          (Sözler)
+          "Küçük kalplerin büyük duaları Arş'a yükselir." — Sözler
         </div>
       </div>
-    </section>
-
-    <section class="award-section">
-      <h2>2. Kategori Finalistlerinin Ödül Töreni</h2>
     </section>
 
     <section>
@@ -224,84 +246,24 @@
       <h2>Erdemli Bir Hayat</h2>
       <div class="media-container">
         <p>Zürich Erkekler</p>
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID"></iframe>
-        <div class="quote">
-          "Ahlak-ı Muhammediye (sas) ile ahlaklanmak, saadetin anahtarıdır." —
-          Lem'alar
-        </div>
-      </div>
-    </section>
-
-    <section class="award-section">
-      <h2>3. Kategori Finalistlerinin Ödül Töreni</h2>
-    </section>
-
-    <section>
-      <span class="program-step">Şiir</span>
-      <h2>Sevgili Peygamberim</h2>
-      <div class="media-container">
-        <p>St. Gallen Kızlar (2 Video)</p>
-        <iframe src="https://www.youtube.com/embed/VIDEO_1"></iframe>
-        <iframe src="https://www.youtube.com/embed/VIDEO_2"></iframe>
-      </div>
-    </section>
-
-    <section class="award-section">
-      <h2>4. Kategori Finalistlerinin Ödül Töreni</h2>
-    </section>
-
-    <section>
-      <span class="program-step">Şiir ve Gösteri</span>
-      <h2>Gül Gösterisi</h2>
-      <div class="media-container">
-        <p>Zürich Kızlar</p>
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID"></iframe>
-        <audio controls><source src="audio/gül_gösterisi.mp3" /></audio>
-      </div>
-    </section>
-
-    <section class="award-section">
-      <h2>5. Kategori Finalistlerinin Ödül Töreni</h2>
-    </section>
-
-    <section>
-      <span class="program-step">Şarkı</span>
-      <h2>Sevgili Peygamberim & Neler Neler Vermezdim</h2>
-      <div class="media-container">
-        <p>St. Gallen Kızlar</p>
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID"></iframe>
-      </div>
-    </section>
-
-    <section class="award-section">
-      <h2>6. ve 7. Kategori Finalistlerinin Ödül Töreni</h2>
-    </section>
-
-    <section>
-      <span class="program-step">Tiyatro / Sahne</span>
-      <h2>Hicret Gösterisi</h2>
-      <div class="media-container">
-        <p>Zürich Kızlar</p>
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID"></iframe>
-        <audio controls><source src="audio/hicret_1.mp3" /></audio>
-        <audio controls><source src="audio/hicret_2.mp3" /></audio>
-        <audio controls><source src="audio/hicret_3.mp3" /></audio>
-      </div>
-    </section>
-
-    <section class="award-section">
-      <h2>Almanca Kategori Finalistleri Ödül Töreni</h2>
-    </section>
-
-    <section>
-      <span class="program-step">İlahi</span>
-      <h2>Şemail İlahisi</h2>
-      <div class="media-container">
-        <p>Zürich Erkekler</p>
-        <audio controls><source src="audio/semail.mp3" /></audio>
-        <div class="quote">
-          "O'nun (sas) şemaili, insanlığın en güzel örneğidir." — Şualar
-        </div>
+        <iframe
+          width="1038"
+          height="584"
+          src="https://www.youtube.com/embed/TKvSSSpaF_M"
+          title="Bir Gül Enstrümantal"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
       </div>
     </section>
 
@@ -310,7 +272,153 @@
       <h2>Canım Peygamberimiz</h2>
       <div class="media-container">
         <p>St. Gallen Kızlar</p>
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID"></iframe>
+        <iframe
+          width="1038"
+          height="584"
+          src="https://www.youtube.com/embed/j9-8wix2eyc"
+          title="Muhabbet Kapısı ♫ Ney Fon Müziği (Sufi Enstrümantal)"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <section>
+      <span class="program-step">Şiir ve Gösteri</span>
+      <h2>Gül Gösterisi</h2>
+      <div class="media-container">
+        <p>Zürich Kızlar</p>
+        <video src="./video/zueri-kiz-hocaefendi-video-2.mp4" controls></video>
+        <figure>
+          <figcaption><strong>Gül Gösterisi</strong></figcaption>
+          <audio controls>
+            <source src="./audio/zueri-kiz-gul-gosterisi-audio.mp3" />
+          </audio>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <span class="program-step">İlahiler</span>
+      <h2>Ey Sevgili & Sevgili Peygamberim</h2>
+      <div class="media-container">
+        <p>Grup Performansı</p>
+        <iframe
+          width="1038"
+          height="584"
+          src="https://www.youtube.com/embed/25cjM4047vc"
+          title="EY SEVGİLİ | FADIL AYDIN"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+
+        <iframe
+          width="1038"
+          height="584"
+          src="https://www.youtube.com/embed/C3OZVQ18b6Q"
+          title="SEVGİLİ PEYGAMBERİM (Çikolog) | Çocuk İlahileri | Çocuk Şarkıları"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <section>
+      <span class="program-step">Tiyatro / Sahne</span>
+      <h2>Hicret Gösterisi</h2>
+      <div class="media-container">
+        <p>Zürich Kızlar</p>
+        <video
+          src="./video/zueri-kiz-video-1-talaelbedru-ses-yok.mp4"
+          controls
+        ></video>
+        <audio controls><source src="./audio/zueri-kiz-fon-audio.mp3" /></audio>
+        <audio controls>
+          <source src="./audio/zueri-kiz-talael-bedru-audio.mp3" />
+        </audio>
+        <audio controls>
+          <source src="./audio/zueri-kiz-ezan-audio.mp3" />
+        </audio>
+      </div>
+    </section>
+
+    <section>
+      <span class="program-step">İlahi</span>
+      <h2>Şemail İlahisi</h2>
+      <div class="media-container">
+        <p>Zürich Erkekler</p>
+        <audio controls>
+          <source src="./audio/zueri-erkek-semail-ilahi-audio.mp3" />
+        </audio>
+      </div>
+    </section>
+
+    <section>
+      <span class="program-step">Müzik & Zikir</span>
+      <h2>Salavat-ı Şerif</h2>
+      <div class="media-container">
+        <p>Keman Eşliğinde</p>
+        <iframe
+          width="973"
+          height="584"
+          src="https://www.youtube.com/embed/G21FjwOXW5I"
+          title="Sami Yusuf - Supplication HD Allahumma Salli Alaa.mp4"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <div class="quote">
+          "Salavat, Efendimiz (sas) ile bağ kurmanın en nurlu yoludur." — Sonsuz
+          Nur
+        </div>
+      </div>
+    </section>
+
+    <section class="award-section">
+      <span class="program-step">Final</span>
+      <h2>Finalistlere Ödül Takdimi</h2>
+      <div class="media-container">
+        <p>Tüm Kategoriler ve Almanca Kategorisi</p>
+        <div class="quote">Muvaffakiyet Allah'tandır.</div>
       </div>
     </section>
 
