@@ -303,10 +303,33 @@
       <h2>Gül Gösterisi</h2>
       <div class="media-container">
         <p>Zürich Kızlar</p>
-        <video src="./video/zueri-kiz-hocaefendi-video-2.mp4" controls></video>
-        <figure>
-          <figcaption><strong>Gül Gösterisi</strong></figcaption>
-          <audio controls>
+        <div
+          style="
+            overflow: hidden;
+            margin: auto;
+            display: flex; /* İçeriği ortalamak için Flexbox */
+            justify-content: center;
+            background: #000; /* Video kenarlarında boşluk kalırsa siyah görünsün */
+            border-radius: 10px;
+            margin-bottom: 20px;
+          "
+        >
+          <video
+            src="./video/zueri-kiz-hocaefendi-video-2.mp4"
+            controls
+            style="
+              max-height: 70vh; 
+              display: block;
+              margin: 0 auto;
+            "
+          ></video>
+        </div>
+
+        <figure style="margin: 0; text-align: center">
+          <figcaption style="margin-bottom: 10px">
+            <strong>Gül Gösterisi</strong>
+          </figcaption>
+          <audio controls style="width: 100%">
             <source src="./audio/zueri-kiz-gul-gosterisi-audio.mp3" />
           </audio>
         </figure>
