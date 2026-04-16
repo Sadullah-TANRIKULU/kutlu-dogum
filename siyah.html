@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Siyah Perde</title>
+    <style>
+      body {
+        background-color: #000000; /* Kahve için #1a0f00, Koyu için #0a0a0f yap */
+        margin: 0;
+        height: 100vh;
+        cursor: none; /* Mouse imlecini gizler, sunumda rahatlık sağlar */
+      }
+      @keyframes nur-pariltisi {
+        0% {
+          filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.8));
+          transform: scale(1);
+        }
+        50% {
+          filter: drop-shadow(0 0 40px rgba(212, 175, 55, 1));
+          transform: scale(1.02);
+        }
+        100% {
+          filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.8));
+          transform: scale(1);
+        }
+      }
+      .prophet-image-glow {
+        max-width: 600px;
+        width: 300px;
+        margin: auto;
+        height: auto;
+        filter: invert(1);
+        animation: nur-pariltisi 5s infinite ease-in-out;
+        z-index: 10;
+        display: block; /* Görünürlüğü zorlar */
+      }
+    </style>
+  </head>
+  <body onclick="window.close()">
+    <div style="display: block; margin: auto">
+      <img
+        src="./assets/hz-muhammed1.png"
+        alt="Hz. Muhammed (s.a.w)"
+        class="prophet-image-glow"
+        onerror="
+          this.style.border = '2px solid red';
+          console.error('Resim bulunamadı: Yolu kontrol edin!');
+        "
+      />
+    </div>
+  </body>
+</html>
