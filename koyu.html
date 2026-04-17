@@ -8,6 +8,11 @@
         margin: 0;
         height: 100vh;
         cursor: none; /* Mouse imlecini gizler, sunumda rahatlık sağlar */
+
+        display: grid; /* Grid sistemini aktif eder */
+        grid-template-columns: 1fr 1fr; /* Ekranı tam olarak iki eşit parçaya böler */
+        align-items: center;
+        justify-items: center; /* Yatayda tam ortalar */
       }
       @keyframes nur-pariltisi {
         0% {
@@ -25,7 +30,7 @@
       }
       .prophet-image-glow {
         max-width: 600px;
-        width: 300px;
+        width: 50rem;
         margin: auto;
         height: auto;
         filter: invert(1);
@@ -36,7 +41,7 @@
     </style>
   </head>
   <body onclick="window.close()">
-    <div style="display: block; margin: auto">
+    <div>
       <img
         src="./assets/hz-muhammed1.png"
         alt="Hz. Muhammed (s.a.w)"
@@ -47,7 +52,7 @@
         "
       />
     </div>
-    <div style="display: block; margin: auto">
+    <div>
       <img
         src="./assets/ravza-i-tahire.jpg"
         alt="ravzai tahire"
