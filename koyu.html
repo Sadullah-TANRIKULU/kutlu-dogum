@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>Siyah Perde</title>
+    <title>Koyu Perde</title>
     <style>
       body {
         background-color: #0a0a0f; /* Kahve için #1a0f00, Koyu için #0a0a0f yap */
@@ -40,6 +40,17 @@
       <img
         src="./assets/hz-muhammed1.png"
         alt="Hz. Muhammed (s.a.w)"
+        class="prophet-image-glow"
+        onerror="
+          this.style.border = '2px solid red';
+          console.error('Resim bulunamadı: Yolu kontrol edin!');
+        "
+      />
+    </div>
+    <div style="display: block; margin: auto">
+      <img
+        src="./assets/ravza-i-tahire.jpg"
+        alt="ravzai tahire"
         class="prophet-image-glow"
         onerror="
           this.style.border = '2px solid red';
